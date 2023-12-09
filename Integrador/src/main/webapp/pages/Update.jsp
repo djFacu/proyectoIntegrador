@@ -18,8 +18,8 @@
 	String cantidad = request.getParameter("cantidad");
 	String categoria = request.getParameter("categoria");
 	
-	MySqlConexion conexion = new MySqlConexion();
-	Connection cn = conexion.conectar();
+	//MySqlConexion conexion = new MySqlConexion();
+	Connection cn = MySqlConexion.conectar();
 	
 	try{
 		Statement stm = cn.createStatement();

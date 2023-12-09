@@ -12,8 +12,8 @@
 <body>
 
 <%
-	MySqlConexion conexion = new MySqlConexion();
-	Connection cn = conexion.conectar();
+	//MySqlConexion conexion = new MySqlConexion();
+	Connection cn = MySqlConexion.conectar();
 	
 	try{
 		Statement stm = cn.createStatement();
